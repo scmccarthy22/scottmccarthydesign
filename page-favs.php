@@ -6,7 +6,7 @@ Template Name: favorites
 
 <?php get_header(); ?>
 <section class="splash clearfix">
-<?php include (TEMPLATEPATH . '/sitenav.php'); ?>	
+<?php include (TEMPLATEPATH . '/inc/sitenav.php'); ?>	
 
 	<img class="favhead" src="<?php bloginfo('template_directory'); ?>/images/myfavorite.png" alt="My Favorite"/>
 

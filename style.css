@@ -1,13 +1,13 @@
 /*   
-Theme Name: Responsive HTML5 Template
+Theme Name: Scott McCarthy Design 2013
 Theme URI: http://scottmccarthydesign.com
-Description: A responsive HTML5 template
+Description: A responsive theme for scottmccarthydesign.com
 Author: Scott McCarthy
 Author URI: http://scottmccarthydesign.com
 Version: 1
 */
 
-@import url('resets.css');
+@import url('css_extra/resets.css');
 
 
 /* Typography
@@ -2051,10 +2051,10 @@ section.featproject {display:none;}
 
 @media screen and (max-width: 1500px){
 .previouspost a, .nextpost a {top: 20em;}
+.previouspost a, .nextpost a {top: 22em;font-size: .6em !important;}
 }
 
 @media screen and (max-width: 1400px){
-.previouspost a, .nextpost a {top: 20em;font-size: .6em !important;}
 .monitor {width: 23.5em;margin-top: 0;}
 }
 

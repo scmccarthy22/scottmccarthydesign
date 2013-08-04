@@ -90,7 +90,7 @@ if(isset($_POST['submitted'])) {
 		
 		
 <!-- Include contactform -->
-<?php include (TEMPLATEPATH . '/form_post.php'); ?>
+<?php include (TEMPLATEPATH . '/inc/form_postcard.php'); ?>
 
 		
 

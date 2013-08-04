@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="splash clearfix">
-<?php include (TEMPLATEPATH . '/sitenav.php'); ?>	
+<?php include (TEMPLATEPATH . '/inc/sitenav.php'); ?>	
 
 	<div class="splashmaxwidth">	
 		<div class="monitor">

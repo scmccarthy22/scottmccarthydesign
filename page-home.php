@@ -7,7 +7,7 @@ Template Name: home
 <?php get_header(); ?>
 
 <section class="splash clearfix" id="homesplash">
-	<?php include (TEMPLATEPATH . '/sitenav.php'); ?>
+	<?php include (TEMPLATEPATH . '/inc/sitenav.php'); ?>
 
 	<h1>
 		<img class="homelogo" src="<?php bloginfo('template_directory'); ?>/bg_images/bigtext.png" alt="Scott McCarthy Design"/>
@@ -42,8 +42,8 @@ Template Name: home
 	<div class="contentcontainer tophalf"> 
 	
 		<?php
-		$custom_query = new WP_Query('p=631');
-		while($custom_query->have_posts()) : $custom_query->the_post();
+		$mission_query = new WP_Query('p=631');
+		while($mission_query->have_posts()) : $mission_query->the_post();
 		echo get_the_content();
 		endwhile;
 		wp_reset_postdata();
@@ -65,7 +65,6 @@ Template Name: home
 					<img class="feat_logo" src="http://www.scottmccarthydesign.com/wp-content/icons/icon_explore.png" alt="Explore DC Logo"/>
 					<a class="learnmore" href="http://www.scottmccarthydesign.com/explore-dc/">Learn More</a>
 				</div>
-
 			</div>
 		</section>
 		
@@ -78,9 +77,9 @@ Template Name: home
 			<ul class="projectlist clearfix">
 			
 			<?php $args = array(
-              'order'            => 'ASC',
-              'cat'            => '9',
-              'post__not_in'   => array(92, 9),
+              'order'			=> 'ASC',
+              'category_name'	=> 'Project',
+              'post__not_in'	=> array(92, 9),
               ); ?>
 			
 			<?php $project_query = new WP_Query( $args ); ?>
@@ -142,7 +141,7 @@ Template Name: home
 					<img class="stampsection" src="<?php bloginfo('template_directory'); ?>/images/stamp1.jpg" alt="stamp section"/>
 					<img class="stamp" src="<?php bloginfo('template_directory'); ?>/images/stamp.png" alt="stamp"/>
 				</div>				
-				<?php include (TEMPLATEPATH . '/contact.php'); ?>
+				<?php include (TEMPLATEPATH . '/inc/contact.php'); ?>
 				<div class="pcardborder bottomalign"></div>
 			</div><!--postcard-->
 		</section>
